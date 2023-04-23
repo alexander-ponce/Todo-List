@@ -25,7 +25,7 @@ const Form = ({content, setContent}) => {
 
   return (
     <div>
-        <form className="col-md-4" onSubmit= {submitHandler}>
+        <form className="col-md mb-4" onSubmit= {submitHandler}>
           <div className= "form-control">
             <label> Create a To Do List</label>
             <input type="text" className="form-control" name="todo"  onChange= {changeHandler} value={toDo.todo} />

@@ -8,7 +8,7 @@ function App() {
   const [content, setContent] = useState ([]);
 
   return (
-    <div className="App">
+    <div className="App container">
       <Form content = {content} setContent={setContent} />
       <List content = {content} setContent={setContent}/>
     </div>
