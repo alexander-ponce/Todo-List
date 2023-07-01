@@ -28,9 +28,11 @@ const List = ({content, setContent}) => {
             {
                 content.map((list, i) => {
                     return (
-                        <div key={i} className="form-check d-flex justify-content-between">
+                        <div key={i} className="form-check d-flex justify-content-between mx-5 px-5">
+                            <div className=''>
+                                <input type="checkbox" className='form-check-input btn btn-secondary ' onChange={() => checkboxComplete (i)} checked = {list.complete}/>
+                            </div>
                             <div>
-                                <input type="checkbox" className='form-check-input btn btn-secondary mr-3' onChange={() => checkboxComplete (i)} checked = {list.complete}/>
                                 <label className="form-check-label "> <span className= {list.complete ? "text-decoration-line-through" : ""}>
                                     {list.todo}</span> 
                                 </label>
